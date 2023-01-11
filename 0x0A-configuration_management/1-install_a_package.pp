@@ -1,7 +1,6 @@
-package {'python3-pip':
-  ensure => installed
-}
+#ensure python 3 is installed
 
-exec {'install_flask':
-  command => 'pip3 install flask==2.1.0'
-}
+package { 'flask' :
+	ensure => '2.1.0',
+	provider => 'pip3',
+	}

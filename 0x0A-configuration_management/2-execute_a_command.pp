@@ -1,6 +1,6 @@
-node 'hostname' {
+#create process
+
   excec {'killmenow':
-    command => 'pkill killmenow',
-    user => 'root',
-  }
-}
+	path => '/bin/'
+	command => 'pkill killmenow',
+	}
