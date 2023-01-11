@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Creates RSA key pair
+
+openssl genrsa -aes256 -out school -passout pass:betty -des3 -f4 4096
