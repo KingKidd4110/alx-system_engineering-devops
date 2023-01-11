@@ -1,6 +1,6 @@
 #create process
 
-  excec {'killmenow':
-	path => '/bin/'
-	command => 'pkill killmenow',
-	}
+exec {'killmenow':
+    path => '/bin/'
+    command => 'pkill killmenow',
+    }
